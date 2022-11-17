@@ -1,0 +1,28 @@
+---
+const props = Astro.props;
+---
+
+<div class="layout">
+  <img src={props.image} alt="Screenshot of the proyect" />
+  <h3>{props.title}</h3>
+  <p>{props.description}</p>
+  <div>
+    <p>Made with: {props.technologies}</p>
+  </div>
+  <div>
+    <a href={props.proyectLink} target="_blank"
+      ><box-icon type="solid" name="rocket" />
+    </a>
+    <a href={props.githubLink} target="_blank"
+      ><box-icon name="github" type="logo" />
+    </a>
+  </div>
+</div>
+
+<style>
+  .layout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+</style>

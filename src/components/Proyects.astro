@@ -1,0 +1,64 @@
+---
+import Card from "./subcomponents/Card.astro";
+---
+
+<!-- TODO: hacer screen de las portadas de cada proyecto
+           que cuando se haga hover en los iconos de stack que tomen color 
+          agregar la info de este proyecto
+-->
+<section id="proyects">
+  <div>
+    <h2>Stack</h2>
+    <div>
+      <box-icon name="html5" type="logo" size="lg" color="#0b2d39" />
+      <box-icon name="css3" type="logo" size="lg" color="#0b2d39" />
+      <box-icon name="sass" type="logo" size="lg" color="#0b2d39" />
+      <box-icon name="javascript" type="logo" size="lg" color="#0b2d39" />
+      <box-icon name="react" type="logo" size="lg" color="#0b2d39" />
+      <box-icon name="bootstrap" type="logo" size="lg" color="#0b2d39" />
+      <box-icon name="tailwind-css" type="logo" size="lg" color="#0b2d39" />
+      <box-icon name="figma" type="logo" size="lg" color="#0b2d39" />
+      <box-icon name="adobe" type="logo" size="lg" color="#0b2d39" />
+      <box-icon type="logo" size="lg" color="#0b2d39" name="firebase" />
+      <box-icon type="logo" size="lg" color="#0b2d39" name="git" />
+    </div>
+  </div>
+  <div>
+    <h2>Proyects</h2>
+    <Card
+      image=""
+      imgAlt="Proyect's screenshot"
+      title="New File Gallery"
+      description="New File Gallery is an online gallery that has been online since June 2021 to February 2022. It was made as a graduation proyect fot the Coderhouse Web Development course."
+      technologies="HTML, SASS, Javascript and Bootstrap"
+      proyectLink="https://new-file-gallery.com.ar/"
+      githubLink="https://github.com/mairomano2/New-File-Gallery"
+    />
+    <Card
+      image=""
+      title="Paint online"
+      description="Paint online is a proyect that imitates some of the Windows Paint functionalities"
+      technologies="HTML, SASS and P5.js"
+      proyectLink="https://mairomano2.github.io/Paint-online/"
+      githubLink="https://github.com/mairomano2/Paint-online"
+    />
+    <Card
+      image=""
+      title="Platinados"
+      description="This proyect tries to motivate the users by giving them everyday tasks and reward them with points once they are compleated. It was inspired on LevelUp Life"
+      technologies="React.js, Firestore and SASS"
+      proyectLink="https://mairomano2.github.io/Platinados-React.js/"
+      githubLink="https://github.com/mairomano2/Platinados-React.js"
+    />
+    <Card
+      image=""
+      title="La tiendita"
+      description="La tiendita is an e-commerce template for small business. It allows the user to controll and process their sales."
+      technologies="React and Firestore"
+      githubLink="https://github.com/mairomano2/Ecomerce"
+    />
+    <div>
+      <p>And this porfolio made with Astro and Tailwind 😉</p>
+    </div>
+  </div>
+</section>
